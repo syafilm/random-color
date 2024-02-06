@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte",
+    "../Button.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\timport Button from \"./Button.svelte\";\n</script>\n\n<style>\n  main {\n    font-family: sans-serif;\n    text-align: center;\n  }\n</style>\n\n<main>\n\t<!-- <h1>Hello CodeSandbox</h1>\n\t<h2>Start editing to see some magic happen!</h2> -->\n\t<Button />\n</main>",
+    "<script>\n\tlet count = 0;\n\n\tfunction handleClick() {\n\t  let x = document.querySelector(\"body\");\n\t  let r = Math.round(Math.random(255) * 255);\n\t  let g = Math.round(Math.random(255) * 255);\n\t  let b = Math.round(Math.random(255) * 255);\n\t  let ranCol = `rgb(${r}, ${g}, ${b})`;\n\t  x.style.backgroundColor = ranCol;\n\n\t  let text = document.querySelector(\"p\");\n\t  text.innerHTML = ranCol;\n\t}\n</script>\n\n<style>\n\tbutton {\n\t  background: white;\n\t  color: #333;\n\t  border: none;\n\t  padding: 8px 12px;\n\t  border-radius: 2px;\n\t  margin-top: 240px;\n\t  font-weight: bold;\n\t  font-size: 1.5rem;\n\t}\n\tp {\n\t  width: max-content;\n\t  margin: 1rem auto;\n\t  background: white;\n\t  color: #333;\n\t  border: none;\n\t  padding: 8px 12px;\n\t  border-radius: 2px;\n\t  font-weight: bold;\n\t  font-size: 1.5rem;\n\t}\n</style>\n\n<button on:click={handleClick}>\n  Click me\n</button>\n\n<p>rgb(255, 255, 255)</p>"
+  ],
+  "names": [],
+  "mappings": "AAKE,mBAAK,CACH,WAAW,CAAE,UAAU,CACvB,UAAU,CAAE,MACd;ACSD,oBAAO,CACL,UAAU,CAAE,KAAK,CACjB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,KAAK,CACjB,WAAW,CAAE,IAAI,CACjB,SAAS,CAAE,MACb,CACA,eAAE,CACA,KAAK,CAAE,WAAW,CAClB,MAAM,CAAE,IAAI,CAAC,IAAI,CACjB,UAAU,CAAE,KAAK,CACjB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,aAAa,CAAE,GAAG,CAClB,WAAW,CAAE,IAAI,CACjB,SAAS,CAAE,MACb"
+}
